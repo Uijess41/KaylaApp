@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ShowAddressActivity">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/imgback"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/backspace"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/notifications"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/cnbold"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Address"/>
+            </RelativeLayout>
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recycleview_address"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+           </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativelogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.karacce.buttom.Buttom
+            android:id="@+id/btnpayment"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+         android:layout_marginBottom="20dp"
+            android:text="Continue To Payment "
+            android:textColor="#FFFFFF"
+            app:buttom_corner_radius="12dp"
+            app:buttom_gradient_end_color="#6691F0"
+            app:buttom_gradient_orientation="right_left"
+            app:buttom_gradient_start_color="#64B5FF"
+            app:buttom_gradient_type="linear"
+            app:buttom_type="gradient" />
+
+
+        <RelativeLayout
+            android:id="@+id/relative_add"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/dotedshape"
+
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_add"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/addaddress"
+                android:src="@drawable/add" />
+
+            <TextView
+                android:id="@+id/addaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Add Address"
+                android:fontFamily="@font/cnbold"
+                android:textAllCaps="false"
+                android:textColor="#6694F2"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

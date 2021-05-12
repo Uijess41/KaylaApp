@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Demo">
+
+     <!--  <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="50dp">
+
+               <ImageView
+                   android:id="@+id/backbtn"
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="10dp"
+                   android:src="@drawable/menubar" />
+
+               <ImageView
+
+                   android:id="@+id/filter"
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="10dp"
+                   android:src="@drawable/filter1" />
+
+               <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="10dp"
+                   android:layout_toLeftOf="@+id/filter"
+                   android:src="@drawable/notification" />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/search_shape">
+
+               <ImageView
+                   android:id="@+id/searchbar"
+                   android:layout_width="25dp"
+                   android:layout_height="20dp"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="10dp"
+                   android:src="@drawable/searchh" />
+
+               <EditText
+                   android:id="@+id/etsearch"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_toRightOf="@+id/searchbar"
+                   android:background="@null"
+                   android:singleLine="true"
+                   android:paddingEnd="10dp"
+                   android:fontFamily="@font/cnbold"
+                   android:hint="Search Your Product" />
+           </RelativeLayout>
+
+           <LinearLayout
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:weightSum="2">
+
+               <LinearLayout
+                   android:layout_width="200dp"
+                   android:layout_height="140dp"
+                   android:layout_weight="1"
+
+                   android:background="#eeeeee"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="30dp"
+                       android:fontFamily="@font/cnbold"
+                       android:textColor="#7C90EA"
+                       android:layout_marginTop="10dp"
+                       android:text="Halloween Offer" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/cnbold"
+                       android:textColor="@color/black"
+                       android:layout_marginLeft="30dp"
+                       android:text="20% Off" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="30dp"
+                       android:fontFamily="@font/cnbold"
+                       android:textColor="@color/black"
+                       android:text="All Products" />
+
+                   <Button
+                       android:id="@+id/shopnow"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="120dp"
+                       android:layout_height="40dp"
+                       android:text="shop now"
+
+                       android:layout_gravity="center">
+
+                   </Button>
+
+
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="250dp"
+                   android:layout_height="140dp">
+
+                   <ImageView
+                       android:layout_width="250dp"
+                       android:layout_height="140dp"
+                       android:scaleType="fitXY"
+                       android:src="@drawable/imgage1" />
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <RelativeLayout
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="40dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_centerVertical="true"
+                   android:fontFamily="@font/cnbold"
+                   android:textColor="@color/black"
+                   android:text="Categories"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="10dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:fontFamily="@font/cnbold"
+                   android:textColor="@color/black"
+                   android:text="See all"/>
+           </RelativeLayout>
+
+
+
+           <RelativeLayout
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="40dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_centerVertical="true"
+                   android:fontFamily="@font/cnbold"
+                   android:textColor="@color/black"
+                   android:text="Featured"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="10dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:fontFamily="@font/cnbold"
+                   android:textColor="@color/black"
+                   android:text="See all"/>
+           </RelativeLayout>
+           <LinearLayout
+               android:weightSum="2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <com.google.android.material.card.MaterialCardView
+                   android:layout_width="match_parent"
+                   android:layout_weight="1"
+                  app:cardCornerRadius="10dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_height="wrap_content">
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="200dp"
+                           android:scaleType="centerCrop"
+                           android:src="@drawable/imgf1"/>
+                   </RelativeLayout>
+               </com.google.android.material.card.MaterialCardView>
+
+               <com.google.android.material.card.MaterialCardView
+                   android:layout_width="match_parent"
+                   android:layout_weight="1"
+                   app:cardCornerRadius="10dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_height="wrap_content">
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="200dp"
+                           android:scaleType="centerCrop"
+                           android:src="@drawable/imgf2"/>
+                   </RelativeLayout>
+               </com.google.android.material.card.MaterialCardView>
+
+           </LinearLayout>
+           <LinearLayout
+               android:weightSum="2"
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <RelativeLayout
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:id="@+id/txt_doller"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/cnbold"
+                       android:textColor="@color/black"
+                       android:layout_margin="10dp"
+                       android:textSize="17sp"
+                       android:text="$ 55.00"/>
+
+                  <ImageView
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                      android:layout_marginTop="10dp"
+                       android:layout_weight="1"
+                       android:layout_alignParentRight="true"
+                       android:src="@drawable/image7" />
+
+
+               </RelativeLayout>
+               <RelativeLayout
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:id="@+id/txt_doller1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/cnbold"
+                       android:textColor="@color/black"
+                       android:layout_margin="10dp"
+                       android:textSize="17sp"
+                       android:text="$ 34.00"/>
+
+                   <ImageView
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_weight="1"
+                       android:layout_alignParentRight="true"
+                       android:src="@drawable/image7" />
+
+                   <TextView
+                       android:id="@+id/txt_price11"
+                       android:layout_below="@+id/txt_doller1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:fontFamily="@font/cnbold"
+                       android:layout_centerVertical="true"
+                       android:textColor="@color/black"
+                       android:textSize="17sp"
+                       android:text="Man T-Shirt"/>
+
+               </RelativeLayout>
+           </LinearLayout>
+
+           <RelativeLayout
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="40dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_centerVertical="true"
+                   android:fontFamily="@font/cnbold"
+                   android:textColor="@color/black"
+                   android:text="New Arrival"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="10dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:fontFamily="@font/cnbold"
+                   android:textColor="@color/black"
+                   android:text="See all"/>
+           </RelativeLayout>
+
+           <LinearLayout
+               android:weightSum="2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <com.google.android.material.card.MaterialCardView
+                   android:layout_width="match_parent"
+                   android:layout_weight="1"
+                   app:cardCornerRadius="10dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_height="wrap_content">
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="200dp"
+                           android:scaleType="centerCrop"
+                           android:src="@drawable/imgn1"/>
+                   </RelativeLayout>
+               </com.google.android.material.card.MaterialCardView>
+
+               <com.google.android.material.card.MaterialCardView
+                   android:layout_width="match_parent"
+                   android:layout_weight="1"
+                   app:cardCornerRadius="10dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_height="wrap_content">
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="200dp"
+                           android:scaleType="centerCrop"
+                           android:src="@drawable/imgn2"/>
+                   </RelativeLayout>
+               </com.google.android.material.card.MaterialCardView>
+
+           </LinearLayout>
+           <LinearLayout
+               android:weightSum="2"
+               android:layout_marginBottom="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <RelativeLayout
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:id="@+id/txt_womandoller"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/cnbold"
+                       android:textColor="@color/black"
+                       android:layout_margin="10dp"
+                       android:textSize="17sp"
+                       android:text="$ 55.00"/>
+
+                   <ImageView
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_weight="1"
+                       android:layout_alignParentRight="true"
+                       android:src="@drawable/image7" />
+
+                   <TextView
+                       android:id="@+id/txt_womanprice1"
+                       android:layout_below="@+id/txt_womandoller"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:fontFamily="@font/cnbold"
+                       android:layout_centerVertical="true"
+                       android:textColor="@color/black"
+                       android:textSize="17sp"
+                       android:text="Woman T-Shirt"/>
+
+
+
+               </RelativeLayout>
+               <RelativeLayout
+                   android:layout_weight="1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:id="@+id/txt_shirtdoller"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/cnbold"
+                       android:textColor="@color/black"
+                       android:layout_margin="10dp"
+                       android:textSize="17sp"
+                       android:text="$ 34.00"/>
+
+                   <ImageView
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_weight="1"
+                       android:layout_alignParentRight="true"
+                       android:src="@drawable/image7" />
+
+                   <TextView
+                       android:id="@+id/txt_shirtprice"
+                       android:layout_below="@+id/txt_shirtdoller"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:fontFamily="@font/cnbold"
+                       android:layout_centerVertical="true"
+                       android:textColor="@color/black"
+                       android:textSize="17sp"
+                       android:text="Shirt"/>
+
+               </RelativeLayout>
+           </LinearLayout>
+
+
+       </LinearLayout>
+   </ScrollView>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

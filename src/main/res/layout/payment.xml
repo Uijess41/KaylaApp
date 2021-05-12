@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_shape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_cardnumber"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+
+                    android:hint="Card Number"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cardnum"
+                    android:layout_toRightOf="@+id/txt_cardnumber"
+                    android:layout_width="180dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_shape"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:paddingEnd="5dp"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:hint="1234567890123456"/>
+
+                <TextView
+                    android:layout_below="@+id/txt_cardnumber"
+                    android:id="@+id/txt_expiry_date"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                  android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:hint="Expiry_Date"/>
+
+                <TextView
+                    android:layout_below="@+id/cardnum"
+                    android:id="@+id/expiry"
+                    android:layout_width="180dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/txt_expiry_date"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:background="@drawable/edit_shape"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:hint="12/12"/>
+
+
+                <TextView
+                    android:layout_below="@+id/txt_expiry_date"
+                    android:id="@+id/txt_CVV"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:hint="CVV number"/>
+
+                <TextView
+                    android:layout_below="@+id/txt_expiry_date"
+                    android:layout_toRightOf="@+id/txt_CVV"
+                    android:id="@+id/cvv"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:layout_marginBottom="10dp"
+                    android:maxLength="3"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:background="@drawable/edit_shape"
+                    android:layout_marginLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:hint="123"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="200dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/rd_cardid"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

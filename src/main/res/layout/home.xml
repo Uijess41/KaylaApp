@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+     <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="100dp"
+               android:orientation="horizontal"
+               android:weightSum="3">
+               <com.google.android.material.card.MaterialCardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="100dp"
+                   android:layout_weight="1"
+                   app:cardCornerRadius="10dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="5dp"
+                   android:elevation="6dp">
+
+                   <RelativeLayout
+                       android:id="@+id/relative"
+                       android:layout_width="wrap_content"
+                       android:layout_height="100dp"
+                       android:background="#4D86C3">
+
+                       <ImageView
+                           android:id="@+id/cateimgage"
+                           android:layout_width="200dp"
+                           android:layout_height="100dp"
+                           android:alpha="0.2"
+                           android:scaleType="centerCrop"
+                           android:src="@drawable/womenimg" />
+
+                       <TextView
+                           android:id="@+id/cat_name"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerInParent="true"
+                           android:fontFamily="@font/cnbold"
+                           android:text="Women"
+                           android:textColor="@color/white"
+                           android:textSize="20sp"
+                           android:textStyle="bold" />
+                   </RelativeLayout>
+
+               </com.google.android.material.card.MaterialCardView>
+
+           </LinearLayout>
+
+</LinearLayout>

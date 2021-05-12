@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ConfirmationActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/cnbold"
+            android:textColor="@color/black"
+            android:text="Confirmation"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:fontFamily="@font/cnbold"
+            android:textColor="@color/black"
+           android:text="@string/Successfull"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:gravity="center"
+            android:fontFamily="@font/cnbold"
+            android:textColor="@color/black"
+            android:text="@string/Complete"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:gravity="center"
+            android:fontFamily="@font/cnbold"
+            android:textColor="#2A7422"
+            android:text="@string/Order"/>
+
+        <TextView
+            android:id="@+id/order_num"
+            android:layout_toRightOf="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:fontFamily="@font/cnbold"
+            android:text="123456"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.karacce.buttom.Buttom
+            android:id="@+id/btn_save"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:text="Back to Home"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:buttom_corner_radius="12dp"
+            app:buttom_gradient_end_color="#6691F0"
+            app:buttom_gradient_orientation="right_left"
+            app:buttom_gradient_start_color="#64B5FF"
+            app:buttom_gradient_type="linear"
+            app:buttom_type="gradient" />
+
+    </RelativeLayout>
+</LinearLayout>

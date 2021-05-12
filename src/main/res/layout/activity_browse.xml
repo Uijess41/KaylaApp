@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.BrowseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/backspace"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/notifications"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/bordercolor"
+                android:layout_margin="10dp"
+                android:layout_height="50dp">
+                <EditText
+                    android:layout_toLeftOf="@+id/filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:fontFamily="@font/cnbold"
+                    android:singleLine="true"
+                    android:layout_marginLeft="20dp"
+                    android:hint="@string/Search"/>
+                <ImageView
+                    android:id="@+id/filter"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/filter"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:weightSum="4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/txtwomen"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/cnbold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#fff"
+
+                    android:text="Women"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:fontFamily="@font/cnbold"
+                    android:text="Men"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:fontFamily="@font/cnbold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:text="Kids"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:fontFamily="@font/cnbold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:text="Jewelries"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/browseshape"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/product1"/>
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/cnbold"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:background="@drawable/sale_shape"
+                        android:text="SALE"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/browseshape2"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/product2" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_overall1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cnbold"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"
+                        android:textSize="17sp"
+                        android:text="Red Overalls"/>
+
+                    <TextView
+                        android:id="@+id/txt_doller1"
+                        android:layout_below="@+id/txt_overall1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cnbold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="17sp"
+                        android:text="$"/>
+
+                    <TextView
+                        android:id="@+id/txt_price1"
+                        android:layout_below="@+id/txt_overall1"
+                        android:layout_toRightOf="@+id/txt_doller1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cnbold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:text="39"/>
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_pink1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cnbold"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"
+                        android:textSize="17sp"
+                        android:text="Pink Fur Coat"/>
+
+                    <TextView
+                        android:id="@+id/doller3"
+                        android:layout_below="@+id/txt_pink1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cnbold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="17sp"
+                        android:text="$"/>
+
+                    <TextView
+                        android:id="@+id/dollerprice4"
+                        android:layout_toRightOf="@+id/doller3"
+                        android:layout_below="@+id/txt_pink1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cnbold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:text="59"/>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/browseshape"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/product1"/>
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/cnbold"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:background="@drawable/sale_shape"
+                        android:text="SALE"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/browseshape2"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/product2" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_overall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cnbold"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"
+                        android:textSize="17sp"
+                        android:text="Red Overalls"/>
+
+                    <TextView
+                        android:id="@+id/txt_doller"
+                        android:layout_below="@+id/txt_overall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cnbold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="17sp"
+                        android:text="$"/>
+
+                    <TextView
+                        android:id="@+id/txt_price"
+                        android:layout_below="@+id/txt_overall"
+                        android:layout_toRightOf="@+id/txt_doller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cnbold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:text="39"/>
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_pink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cnbold"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"
+                        android:textSize="17sp"
+                        android:text="Pink Fur Coat"/>
+
+                    <TextView
+                        android:id="@+id/doller2"
+                        android:layout_below="@+id/txt_pink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cnbold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="17sp"
+                        android:text="$"/>
+
+                    <TextView
+                        android:id="@+id/dollerprice"
+                        android:layout_toRightOf="@+id/doller2"
+                        android:layout_below="@+id/txt_pink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cnbold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:text="59"/>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

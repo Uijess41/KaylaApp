@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChatActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bback"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_circle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/btn"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/circleimg"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_toRightOf="@+id/img_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blair Dota"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_below="@+id/txt_name"
+                android:layout_toRightOf="@+id/img_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_circle1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/circleimg"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <EditText
+            android:layout_toRightOf="@+id/img_circle1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:textSize="13sp"
+            android:layout_marginLeft="5dp"
+            android:hint="Hi,casis,Would you be avilable for a coffe next week ?"
+            android:layout_height="50dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_circle2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/edittext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/circleimg"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <EditText
+            android:id="@+id/edittext"
+
+            android:layout_width="300dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:textSize="13sp"
+            android:layout_marginLeft="90dp"
+            android:hint="Hi,casis,Would you be avilable for a coffe next week ?"
+            android:layout_height="50dp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_circle1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/circleimg"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <EditText
+            android:layout_toRightOf="@+id/img_circle1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:textSize="13sp"
+            android:layout_marginLeft="5dp"
+            android:hint="Hi,casis,Would you be avilable for a coffe next week ?"
+            android:layout_height="50dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_circle2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/edittext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/circleimg"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <EditText
+            android:id="@+id/edittext"
+
+            android:layout_width="300dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:textSize="13sp"
+            android:layout_marginLeft="90dp"
+            android:hint="Hi,casis,Would you be avilable for a coffe next week ?"
+            android:layout_height="50dp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_circle1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/circleimg"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <EditText
+            android:layout_toRightOf="@+id/img_circle1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:textSize="13sp"
+            android:layout_marginLeft="5dp"
+            android:hint="Hi,casis,Would you be avilable for a coffe next week ?"
+            android:layout_height="50dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_circle2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/edittext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/circleimg"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <EditText
+            android:id="@+id/edittext"
+
+            android:layout_width="300dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:textSize="13sp"
+            android:layout_marginLeft="90dp"
+            android:hint="Hi,casis,Would you be avilable for a coffe next week ?"
+            android:layout_height="50dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/btn2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+          android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bback"/>
+
+        <EditText
+            android:layout_toRightOf="@+id/btn2"
+            android:layout_width="300dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:hint="Type somethinks"
+            android:layout_centerVertical="true"
+            android:layout_height="50dp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kayla">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kayla">
+        <activity android:name=".Activity.ChatActivity"></activity>
+        <activity android:name=".Activity.MessageActivity"></activity>
+        <activity android:name=".Activity.SuccesfullActivity" />
+        <activity android:name=".Activity.Demo2" />
+        <activity android:name=".Activity.CreditCardActivity" />
+        <activity android:name=".Activity.UpdateAddressActivity" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:label="@string/title_activity_home" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <activity android:name=".Activity.NewPostActivity" >
+
+        </activity>
+        <activity android:name=".Activity.SettingActivity" />
+        <activity android:name=".Activity.ReturnRequestActivity" />
+        <activity android:name=".Activity.FeatureActivity" />
+        <activity android:name=".Activity.ShippingAddress" />
+        <activity android:name=".Activity.ShipActivity" />
+        <activity android:name=".Activity.PaymentActivity" />
+        <activity android:name=".Activity.NewArrivalActivity" />
+        <activity android:name=".Activity.ItemDetailsActivity" />
+        <activity android:name=".Activity.ConfirmationActivity" />
+        <activity android:name=".Activity.CreateAddress" />
+        <activity android:name=".Activity.Demo" />
+        <activity android:name=".Activity.SearchResultActivity" />
+        <activity android:name=".Activity.OrderStatusActivity" />
+        <activity android:name=".Activity.FavoriteActivity" />
+        <activity android:name=".Activity.MyOrderActivity" />
+        <activity android:name=".Activity.PolicyActivity" />
+        <activity android:name=".Activity.ProfileActivity" />
+        <activity android:name=".Activity.CatWomenActivity" />
+        <activity android:name=".Activity.CheckoutActivity" />
+        <activity android:name=".Activity.CategoryActivity" />
+        <activity android:name=".Activity.BrowseActivity" />
+        <activity android:name=".Activity.BlogActivity" />
+        <activity android:name=".Activity.PostActivity">
+
+
+
+        </activity>
+        <activity android:name=".Activity.CartActivity" />
+        <activity android:name=".Activity.SignupActivity" />
+        <activity android:name=".Activity.ShowAddressActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.WelcomeScreenActivity" />
+        <activity android:name=".Activity.SplashActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MainActivity">
+        </activity>
+        <meta-data
+            android:name="co.paystack.android.PublicKey"
+            android:value="pk_live_0169f0d7c8bfbe08de5edc70429bbb0e736c9f83" /> 
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
